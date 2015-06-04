@@ -26,7 +26,7 @@ gem 'slim-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'neatjson'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 
 # Web Server
 gem 'puma'
@@ -46,14 +46,14 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller', platforms: [:mri_19, :mri_20, :mri_21, :rbx]
-  gem 'html2haml'
   gem 'quiet_assets'
   gem 'meta_request'
   gem 'syntax'
+  gem 'annotate'
 end
 
 group :development, :test do
-  gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
+  gem 'pry-rails'
   gem 'pry-byebug'
 
   gem 'byebug'
